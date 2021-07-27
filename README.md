@@ -1,6 +1,8 @@
 # Container-Infra-Study
 컨테이너 인프라 환경 구축을 위한 쿠버네티스/도커 책 읽으며 연습하는 저장소
 
+👉👉[wiki](https://github.com/aeuna/Container-Infra-Study/wiki)👈👈
+
 # Curriculum
 |날짜|강의|설명|
 |------|---|---|
