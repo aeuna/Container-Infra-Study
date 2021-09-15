@@ -1,9 +1,9 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby : # 에디터에 현재 파일이 ruby임을 인식하게 하는 호환 코드, ft=file type
-Vagrant.configure("2") do |config| 
+Vagrant.configure("2") do |config| # do |config|는 베이그런트 설정의 시작을 알림.
   config.vm.define "m-k8s" do |cfg| # 가상머신 m-k8s로 정의
     cfg.vm.box = "sysnet4admin/CentOS-k8s"
-    cfg.vm.provider "virtualbox" do |vb| # 베이그런트의 provider가 virtualbox라고 정의
+    cfg.vm.provider "virtualbox" do |vb| # 베이그런트의 provider가 virtualbox라고 정의, 프로바이더는 베이그런트를 통해 제공되는 코드가 실제로 가상 머신으로 배포되게 하는 소프트웨어 (버추얼박스)
       vb.name = "m-k8s(github_SysNet4Admin)"# 가상머신 이름
       vb.cpus = 2 # cpu수
       vb.memory = 2048 # 메모리 크기
